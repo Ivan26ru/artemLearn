@@ -19,9 +19,9 @@ a{
 form{
     color: cornflowerblue;
 }
-.exit{
+input{
     color: lime;
 }
-.poke{
+button{
     color: salmon;
 }
