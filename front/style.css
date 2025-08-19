@@ -16,6 +16,7 @@ head{
 }
 body{
     color: green;
+    background-color: black;
 }
 p{
     color: pink;
@@ -34,4 +35,13 @@ input{
 }
 button{
     color: salmon;
+}
+.mercury{
+    color: gray;
+}
+.venus{
+    color: lightyellow;
+}
+.earth{
+    color: red;
 }
