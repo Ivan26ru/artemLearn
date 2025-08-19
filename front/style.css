@@ -42,6 +42,15 @@ button{
 .venus{
     color: lightyellow;
 }
-.earth{
+.Earth{
+    color: red;
+}
+.Mars{
+    color: orangered;
+}
+.Jupiter{
+    color: sandybrown;
+}
+.Saturn{
     color: red;
 }
