@@ -1,6 +1,16 @@
-div{
-    color: blue;
+.item{
+    color: magenta;
 }
+
+.item.active{
+	background: green;
+}
+
+.item:hover{
+	border: 1px solid red;
+	cursor: pointer;
+}
+
 head{
     color: aqua;
 }
