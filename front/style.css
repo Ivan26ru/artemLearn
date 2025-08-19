@@ -18,11 +18,8 @@ body{
     color: green;
     background-color: black;
 }
-p{
+p {
     color: pink;
-}
-li{
-    color: brown;
 }
 a{
     color: darkseagreen;
@@ -65,4 +62,10 @@ button{
 }
 .Planet.ten{
     color: orange;
+}
+.myCustomList{
+    color: lightseagreen;
+}
+li:nth-child(3n){
+    color:red;
 }
