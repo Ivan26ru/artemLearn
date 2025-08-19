@@ -69,3 +69,6 @@ button{
 li:nth-child(3n){
     color:red;
 }
+li:nth-last-child(-n + 18){
+    color:black;
+}
