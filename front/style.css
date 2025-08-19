@@ -54,3 +54,15 @@ button{
 .Saturn{
     color: red;
 }
+.Uran{
+    color: lightseagreen;
+}
+.Neptune{
+    color:seagreen;
+}
+.Planet.nine{
+    color: red;
+}
+.Planet.ten{
+    color: orange;
+}
