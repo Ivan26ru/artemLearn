@@ -69,3 +69,7 @@ button{
 li:nth-child(3n){
     color:red;
 }
+
+.myCustomList li:nth-child(3n){
+	background: green;
+}
