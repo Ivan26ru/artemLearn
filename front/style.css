@@ -14,10 +14,7 @@
 head{
     color: aqua;
 }
-body{
-    color: green;
-    background-color: black;
-}
+
 p {
     color: pink;
 }
@@ -66,10 +63,49 @@ button{
 .myCustomList{
     color: lightseagreen;
 }
-li:nth-child(3n){
+.myCustomList li:nth-child(3n){
     color:red;
 }
 
 .myCustomList li:nth-child(3n){
 	background: green;
+}
+
+ul li:nth-last-child(n+18){
+    color:black;
+}
+
+span{
+    border: 1px solid red;
+    font-size: smaller;
+    background: salmon;
+}
+a{
+    padding: 5px;
+    border: 1px solid chocolate;
+    background: darkblue;
+    cursor: grabbing;
+    margin: 10px;
+}
+
+button{
+    margin: 30px;
+    padding: 20px;
+    font-size: 20px;
+    background: aquamarine;
+    cursor: pointer;
+}
+p{
+    font-size: 30px;
+    border: 4px solid gray;
+    padding: 8px;
+}
+div{
+    background: cornflowerblue;
+    border: 2px solid red;
+    height: 67px;
+    font-size: 20px;
+    cursor: text;
+    margin: 5px;
+    padding: 15px;
 }
