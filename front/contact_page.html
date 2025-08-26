@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+	<title>Заголовок</title>
+	<link href="style.css" rel="stylesheet">
+	<script></script>
+</head>
+<body class="guard">
+
+<p>Блочный</p>
+
+<span>Строковый</span>
+
+<p>Lorem <br> ipsum
+	dolor.</p>
+
+
+<!-- ссылочная картина на index.html-->
+<a class="wrap_img" href="index.html">
+	<img src="./img/img.png">
+	<span class="marker">new</span>
+</a>
+
+<!-- ссылка на себя же-->
+<a href="#" class="accept_licence">
+	примите соглашение
+</a>
+
+<!-- ссылка на index.html в новой вкладке -->
+<a href="index.html" target="_blank">
+	ссылка на index.html в новой вкладке
+</a>
+
+<style>
+	.wrap_img {
+		width: 100px;
+		height: 60px;
+		border: 1px solid red;
+
+		display: block;
+		position: relative;
+	}
+
+	/* абсолютное позиционирование */
+	.marker {
+		position: absolute;
+		right: -10px;
+		top: -10px;
+	}
+
+	/* фиксированое позиционирование*/
+	.accept_licence {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.wrap_img img {
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+</body>
+</html>
