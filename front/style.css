@@ -51,3 +51,83 @@ div {
     margin: 5px;
     padding: 15px;
 }
+
+.accept {
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+
+.refuse {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    background: red;
+}
+
+.old {
+    border: 1px solid coral;
+    position: relative;
+}
+
+.new {
+    border: 1px solid yellow;
+    position: absolute;
+    left: 5px;
+    bottom: 5px
+}
+
+.more {
+    border: 1px solid white;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+.up_left {
+    border: 1px solid silver;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.down_right {
+    border: 1px solid brown;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+.center{
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    right: 1000px;
+    left: 1000px;
+}
+.pdp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: 1px solid blue;
+    background-color: white;
+}
+.tea{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: 1px solid teal;
+    background-color: white;
+}
+.coffee{
+    position: fixed;
+    top: 20px;
+    right: 60px;
+    cursor: pointer;
+    border: 1px solid saddlebrown;
+    background-color: white;
+}
