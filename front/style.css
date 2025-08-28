@@ -1,86 +1,26 @@
-.item{
-    color: magenta;
-}
-
-.item.active{
-	background: green;
-}
-
-.item:hover{
-	border: 1px solid red;
-	cursor: pointer;
-}
-
-head{
-    color: aqua;
-}
-
-p {
-    color: pink;
-}
-a{
-    color: darkseagreen;
-}
-form{
-    color: cornflowerblue;
-}
-input{
-    color: lime;
-}
-button{
-    color: salmon;
-}
-.mercury{
-    color: gray;
-}
-.venus{
-    color: lightyellow;
-}
-.Earth{
-    color: red;
-}
-.Mars{
-    color: orangered;
-}
-.Jupiter{
-    color: sandybrown;
-}
-.Saturn{
-    color: red;
-}
-.Uran{
+.myCustomList {
     color: lightseagreen;
 }
-.Neptune{
-    color:seagreen;
-}
-.Planet.nine{
+
+.myCustomList li:nth-child(3n) {
     color: red;
 }
-.Planet.ten{
-    color: orange;
-}
-.myCustomList{
-    color: lightseagreen;
-}
-.myCustomList li:nth-child(3n){
-    color:red;
+
+.myCustomList li:nth-child(3n) {
+    background: green;
 }
 
-.myCustomList li:nth-child(3n){
-	background: green;
+ul li:nth-last-child(n+18) {
+    color: black;
 }
 
-ul li:nth-last-child(n+18){
-    color:black;
-}
-
-span{
+span {
     border: 1px solid red;
     font-size: smaller;
     background: salmon;
 }
-a{
+
+a {
     padding: 5px;
     border: 1px solid chocolate;
     background: darkblue;
@@ -88,19 +28,21 @@ a{
     margin: 10px;
 }
 
-button{
+button {
     margin: 30px;
     padding: 20px;
     font-size: 20px;
     background: aquamarine;
     cursor: pointer;
 }
-p{
+
+p {
     font-size: 30px;
     border: 4px solid gray;
     padding: 8px;
 }
-div{
+
+div {
     background: cornflowerblue;
     border: 2px solid red;
     height: 67px;
