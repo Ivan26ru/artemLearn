@@ -125,3 +125,57 @@ div {
     border: 1px solid saddlebrown;
     background-color: white;
 }
+li a{
+    text-decoration: none;
+}
+.main_page_choice{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.tier-list_page_choice{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.navigation_page_choice{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.contacts_page_choice{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.sub_page_choice{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.follow_page_choice{
+    background: orange;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.porsche{
+    width: 300px;
+}
+.country{
+    width: 300px;
+}
+.cube{
+    width: 300px;
+}
+.wall{
+    width: 300px;
+}
+.wood{
+    width: 300px;
+}
