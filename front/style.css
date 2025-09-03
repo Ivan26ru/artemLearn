@@ -94,46 +94,42 @@
     background-color: white;
 }
 
-li a {
-    text-decoration: none;
-}
-
-.main_page_choice {
+.pages__note_main {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.tier-list_page_choice {
+.pages__note_tier {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.navigation_page_choice {
+.pages__note_navigation {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.contacts_page_choice {
+.pages__note_contacts {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.sub_page_choice {
+.pages__note_subs {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.follow_page_choice {
+.pages__note_follow {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
@@ -158,4 +154,8 @@ li a {
 
 .wood {
     width: 300px;
+}
+.pages__note {
+    text-underline: none;
+    color: blue;
 }
