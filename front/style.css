@@ -94,42 +94,42 @@
     background-color: white;
 }
 
-.pages__note_main {
+.pages\+note_main {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.pages__note_tier {
+.pages\+note_tier {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.pages__note_navigation {
+.pages\+note_navigation {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.pages__note_contacts {
+.pages\+note_contacts {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.pages__note_subs {
+.pages\+note_subs {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
 
-.pages__note_follow {
+.pages\+note_follow {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
@@ -155,7 +155,7 @@
 .wood {
     width: 300px;
 }
-.pages__note {
+.pages\+note {
     text-underline: none;
     color: blue;
 }
