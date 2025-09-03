@@ -10,38 +10,6 @@
     background: green;
 }
 
-
-span {
-    border: 1px solid red;
-    font-size: smaller;
-    background: salmon;
-}
-
-
-button {
-    margin: 30px;
-    padding: 20px;
-    font-size: 20px;
-    background: aquamarine;
-    cursor: pointer;
-}
-
-p {
-    font-size: 30px;
-    border: 4px solid gray;
-    padding: 8px;
-}
-
-div {
-    background: cornflowerblue;
-    border: 2px solid red;
-    height: 67px;
-    font-size: 20px;
-    cursor: text;
-    margin: 5px;
-    padding: 15px;
-}
-
 .accept {
     position: fixed;
     bottom: 50px;
@@ -125,57 +93,69 @@ div {
     border: 1px solid saddlebrown;
     background-color: white;
 }
-li a{
+
+li a {
     text-decoration: none;
 }
-.main_page_choice{
+
+.main_page_choice {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
-.tier-list_page_choice{
+
+.tier-list_page_choice {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
-.navigation_page_choice{
+
+.navigation_page_choice {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
-.contacts_page_choice{
+
+.contacts_page_choice {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
-.sub_page_choice{
+
+.sub_page_choice {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
-.follow_page_choice{
+
+.follow_page_choice {
     background: orange;
     border: 1px solid black;
     border-radius: 5px;
     color: aliceblue;
 }
-.porsche{
+
+.porsche {
     width: 300px;
 }
-.country{
+
+.country {
     width: 300px;
 }
-.cube{
+
+.cube {
     width: 300px;
 }
-.wall{
+
+.wall {
     width: 300px;
 }
-.wood{
+
+.wood {
     width: 300px;
 }
