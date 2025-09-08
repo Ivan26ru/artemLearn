@@ -1,3 +1,22 @@
+.img_window {
+    width: 300px;
+}
+
+.block-menu {
+    text-decoration: none;
+}
+
+.block-menu__elem-item {
+    color: blue;
+}
+
+.block-menu__elem-item_mod-selected {
+    border: 1px solid orange;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
 .myCustomList {
     color: lightseagreen;
 }
@@ -92,70 +111,4 @@
     cursor: pointer;
     border: 1px solid saddlebrown;
     background-color: white;
-}
-
-.pages-note_main {
-    background: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-}
-
-.pages-note_tier {
-    background: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-}
-
-.pages-note_navigation {
-    background: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-}
-
-.pages-note_contacts {
-    background: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-}
-
-.pages-note_subs {
-    background: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-}
-
-.pages-note_follow {
-    background: orange;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: aliceblue;
-}
-
-.porsche {
-    width: 300px;
-}
-
-.country {
-    width: 300px;
-}
-
-.cube {
-    width: 300px;
-}
-
-.wall {
-    width: 300px;
-}
-
-.wood {
-    width: 300px;
-}
-.pages-note {
-    text-underline: none;
-    color: blue;
 }
