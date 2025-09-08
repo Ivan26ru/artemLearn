@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Новости</title>
+	<title>Пример</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<p>Меню для навигации по страницам <b>И мы сейчас на странице "Новости"</b></p>
-<p>Так же установить соответствующее название для тега Title</p>
-<ul>
-	<li><a href="#">lorem</a></li>
-	<li><a href="#">lorem</a></li>
-	<li><a href="#" class="active">Новости</a></li>
-	<li><a href="#">lorem</a></li>
-	<li><a href="#">lorem</a></li>
-	<li><a href="#">lorem</a></li>
-	<li><a href="#">lorem</a></li>
-	<li><a href="#">lorem</a></li>
+<p>Как и ранее говорил сделать так чтоб картинки были в контейнере, использовать правильно БЭМ(надеюсь что это правильно, если нет то я улучшаюсь)</p>
+<h1>Мы на странице примера!</h1>
+<ul class="block-menu">
+    <li><a href="index.html" class="block-menu block-menu__elem-item">Главная страница</a></li>
+    <li><a href="website_tierlist.html" class="block-menu block-menu__elem-item">Список уровней</a></li>
+    <li><a href="page_contacts.html" class="block-menu block-menu__elem-item">Контакты</a></li>
+    <li><a href="subscription_page.html" class="block-menu block-menu__elem-item">Подписки</a></li>
+    <li><a href="page_follow.html" class="block-menu block-menu__elem-item ">Фолловеры</a></li>
+    <li><a href="navigation_page.html" class="block-menu block-menu__elem-item ">Навигация</a>
+    </li>
+    <li><a href="example_menu.html" class="block-menu block-menu__elem-item block-menu__elem-item_mod-selected">Пример</a></li>
+    <li><a href="contact_page.html" class="block-menu block-menu__elem-item">Контакты 2</a></li>
 </ul>
-
-<style>
-	li a {
-		text-decoration: none;
-	}
-
-	.active {
-		font-weight: bold;
-		color: blue;
-	}
-</style>
 </body>
 </html>
