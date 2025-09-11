@@ -9,14 +9,22 @@
     <label for="name">Ваше имя:</label>
     <input type="text" id="name" name="name" required><br>
     <label for="email">Email:</label>
-    <input type="text" id="email" name="email" required><br>
+    <input type="email" id="email" name="email" required><br>
     <label for="number">Номер:</label>
-    <input type="text" id="number" name="number" required><br>
-    <button type="submit">Отправить</button><br>
-    <!-- Простой контейнеры формы, без него браузер не понимает что делать с введенной информацией -->
+    <input type="tel" id="number" name="number" required><br>
+    <button type="submit">Отправить</button>
     <br>
-    <br>
-
 </form>
+<!-- Простой контейнеры формы, без него браузер не понимает что делать с введенной информацией -->
+<br>
+<br>
+<form action="/submit" method="post">
+    <input type="text" name="name-c" placeholder="Ваше имя" required><br>
+    <input type="email" name="password" placeholder="Email" required><br>
+    <input type="tel" name="number" placeholder="Номер" value="+7 " required><br>
+    <button type="submit">Отправить</button>
+</form>
+<br>
+<br>
 </body>
 </html>
