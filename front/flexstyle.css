@@ -50,3 +50,26 @@
 }
 
 /* во втором варианте сделал из блочных тегов в строчный */
+
+.flex-container__flex-direction_row {
+    flex-direction: row;
+    display: flex;
+    gap: 6px;
+}
+
+.flex-container__flex-direction-row_1 {
+    border: 1px solid red;
+    background-color: pink;
+}
+
+.flex-container__flex-direction-row_2 {
+    background-color: violet;
+    border: 1px solid darkseagreen;
+}
+
+.flex-container__flex-direction-row_3 {
+    border: 1px solid tan;
+    background-color: silver;
+}
+
+/* ну значение по умолчанию */
