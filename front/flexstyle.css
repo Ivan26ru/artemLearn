@@ -73,3 +73,23 @@
 }
 
 /* ну значение по умолчанию */
+.flex-container__flex-direction-row-reverse {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: flex-start
+}
+
+.flex-container__flex-direction-row-reverse_1 {
+    border: 1px solid darkred;
+    background-color: salmon;
+}
+
+.flex-container__flex-direction-row-reverse_2 {
+    background-color: aqua;
+    border: crimson 1px solid;
+}
+
+.flex-container__flex-direction-row-reverse_3 {
+    border: 1px solid chocolate;
+    background-color: blueviolet;
+}
