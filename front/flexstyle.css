@@ -110,3 +110,16 @@
 .flex-container__flex-direction-column_3 {
     background-color: deepskyblue;
 }
+.flex-container__flex-direction-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.flex-container__flex-direction-column-reverse_1{
+    background-color: lime;
+}
+.flex-container__flex-direction-column-reverse_2{
+    background-color: chartreuse;
+}
+.flex-container__flex-direction-column-reverse_3{
+    background-color: blueviolet;
+}
