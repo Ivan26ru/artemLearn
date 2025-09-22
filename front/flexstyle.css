@@ -26,3 +26,27 @@
     border: 1px solid white;
 }
 /*в первом генерирует flex-контейнер уровня блока*/
+.flex-container__line {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    border: 1px solid green;
+    gap: 5px
+}
+
+.flex-container__line_1 {
+    background-color: brown;
+    border: 1px solid red;
+    color: orange;
+}
+
+.flex-container__line_2 {
+    background-color: green;
+    border: 1px solid blue;
+}
+
+.flex-container__line_3 {
+    background-color: teal;
+    border: pink 1px solid;
+}
+
+/* во втором варианте сделал из блочных тегов в строчный */
