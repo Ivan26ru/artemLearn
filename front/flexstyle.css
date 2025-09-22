@@ -93,3 +93,20 @@
     border: 1px solid chocolate;
     background-color: blueviolet;
 }
+.flex-container__flex-direction-column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid magenta;
+}
+
+.flex-container__flex-direction-column_1 {
+    background-color: crimson;
+}
+
+.flex-container__flex-direction-column_2 {
+    background-color: cyan;
+}
+
+.flex-container__flex-direction-column_3 {
+    background-color: deepskyblue;
+}
