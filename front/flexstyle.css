@@ -1,6 +1,6 @@
 .flex-container {
     border: 1px solid red;
-    width: 300px;
+    width: 400px;
     height: 100px;
     margin: 10px;
 }
@@ -128,4 +128,8 @@
     flex-wrap: wrap;
     display: flex;
     gap: 5px
+}
+.flex-container__flex-wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
