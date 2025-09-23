@@ -123,3 +123,9 @@
 .flex-container__flex-direction-column-reverse_3{
     background-color: blueviolet;
 }
+
+.flex-container__flex-wrap{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px
+}
