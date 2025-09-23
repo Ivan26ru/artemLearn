@@ -133,3 +133,8 @@
     display: flex;
     flex-wrap: wrap-reverse;
 }
+.flex-flow{
+    flex-flow: row wrap-reverse;
+    display: flex;
+}
+/* flex-flow как я понимаю делает обобщенно */
