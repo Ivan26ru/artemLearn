@@ -218,3 +218,11 @@
     display: flex;
     justify-content: flex-end;
 }
+.justify-content__flex-center{
+    display: flex;
+    justify-content: center;
+}
+.justify-content__space-between{
+    display: flex;
+    justify-content: space-between;
+}
