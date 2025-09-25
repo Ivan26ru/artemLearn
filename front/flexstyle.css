@@ -209,3 +209,8 @@
 .basis_2, .basis_4, .basis_5{
     flex-basis: 6em;
 }
+
+.justify-content__flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
