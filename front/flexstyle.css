@@ -3,7 +3,6 @@
     width: 400px;
     height: 100px;
     margin: 10px;
-    display: flex;
 }
 
 .flex-container__block {
@@ -160,4 +159,16 @@
 }
 .flex_1{
     flex: 1 1
+}
+
+.flex-grow{
+    display: flex;
+}
+.grow_1, .grow_2, .grow_3, .grow_6{
+    flex-grow: 1;
+    border: 1px solid firebrick;
+}
+.grow_4, .grow_5{
+    flex-grow: 2;
+    border: 1px solid gold;
 }
