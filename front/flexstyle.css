@@ -155,3 +155,9 @@
     background-color: cyan;
     order: -1;
 }
+.style-flex{
+    display: flex;
+}
+.flex_1{
+    flex: 1 1
+}
