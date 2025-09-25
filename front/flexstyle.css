@@ -285,3 +285,29 @@
     height: 100px;
     margin: 10px;
 }
+.align-self__flex-start{
+    align-self: flex-start;
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+}
+.flex-start{
+    align-self: flex-start;
+}
+.flex-end{
+    align-self: flex-end;
+}
+.align-self__flex-end{
+    align-self: flex-start;
+    display: flex;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+}
