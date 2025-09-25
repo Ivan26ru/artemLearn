@@ -195,3 +195,17 @@
     flex-shrink: 2.5;
     border: 1px solid silver;
 }
+.flex-basis{
+    display: flex;
+    padding: 10px;
+    border: 3px solid blueviolet;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+.basis_1, .basis_3{
+    flex-basis: 3em
+}
+.basis_2, .basis_4, .basis_5{
+    flex-basis: 6em;
+}
