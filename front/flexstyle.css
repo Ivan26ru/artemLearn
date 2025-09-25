@@ -286,7 +286,6 @@
     margin: 10px;
 }
 .align-self__flex-start{
-    align-self: flex-start;
     display: flex;
     border: 1px solid red;
     align-items: center;
@@ -302,7 +301,6 @@
     align-self: flex-end;
 }
 .align-self__flex-end{
-    align-self: flex-start;
     display: flex;
     border: 1px solid red;
     align-items: center;
@@ -312,7 +310,6 @@
     margin: 10px;
 }
 .align-self__center{
-    align-self: flex-start;
     display: flex;
     border: 1px solid red;
     align-items: flex-end;
@@ -323,4 +320,16 @@
 }
 .center{
     align-self: center;
+}
+.align-self__baseline{
+    display: flex;
+    border: 1px solid red;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+}
+.align-self__baseline_1{
+    align-self: baseline;
 }
