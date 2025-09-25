@@ -172,3 +172,26 @@
     flex-grow: 2;
     border: 1px solid gold;
 }
+.flex-shrink{
+    display: flex;
+    width: 500px;
+}
+.flex-shrink div{
+    width: 200px;
+}
+.shrink_1{
+    flex-shrink: 3;
+    border: 1px solid yellow ;
+}
+.shrink_2{
+    flex-shrink: 2;
+    border: 1px solid red
+}
+.shrink_3{
+    flex-shrink: 1.5;
+    border: 1px solid orange;
+}
+.shrink_4, .shrink_5{
+    flex-shrink: 2.5;
+    border: 1px solid silver;
+}
