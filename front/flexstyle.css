@@ -311,3 +311,16 @@
     height: 100px;
     margin: 10px;
 }
+.align-self__center{
+    align-self: flex-start;
+    display: flex;
+    border: 1px solid red;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+}
+.center{
+    align-self: center;
+}
