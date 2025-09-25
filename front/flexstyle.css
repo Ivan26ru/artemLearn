@@ -276,3 +276,12 @@
 .align-items__center span{
     border: 1px solid chartreuse;
 }
+.align-items__baseline{
+    align-items: baseline;
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+}
