@@ -230,3 +230,13 @@
     display: flex;
     justify-content: space-around;
 }
+
+.align-items__stretch{
+    display: flex;
+    align-items: stretch
+}
+.align-items__stretch div {
+    width: 100px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+}
