@@ -333,3 +333,17 @@
 .align-self__baseline_1{
     align-self: baseline;
 }
+.align-self__stretch{
+    display: flex;
+    border: 1px solid red;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+}
+.align-self__stretch_1{
+    align-self: stretch;
+    border: 1px solid violet;
+    width: 100px;
+}
