@@ -437,3 +437,26 @@
     font-size: 20px;
     border: 1px solid coral;
 }
+
+.flex-example{
+	border: 1px solid black;
+	display: flex;
+	margin: 10px;
+}
+
+.flex-example__item{
+	padding: 15px;
+	border: 3px dotted violet;
+}
+
+.flex-example.flex-example_jc-between{
+	justify-content: space-between;
+}
+
+.flex-example.flex-example_height{
+	align-items: center;
+}
+
+.flex-example__item.flex-example__item_big-height{
+	height: 100px;
+}
