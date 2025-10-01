@@ -6,14 +6,12 @@
 
 .flex-container__block {
     display: -webkit-flex;
-    border: 1px solid blue;
 }
 
 /*в первом генерирует flex-контейнер уровня блока*/
 .flex-container__line {
     display: -webkit-inline-flex;
     display: inline-flex;
-    border: 1px solid green;
     gap: 5px
 }
 
@@ -31,7 +29,6 @@
 
 .flex-container__flex-direction-column {
     flex-direction: column;
-    border: 1px solid magenta;
 }
 
 .flex-container__flex-direction-column-reverse {
@@ -106,56 +103,21 @@
 }
 
 .align-items__stretch {
-    display: flex;
     align-items: stretch
 }
 
-.align-items__stretch div {
-    width: 100px;
-    border: 2px solid skyblue;
-    border-radius: 5px;
-}
 
 .align-items__flex-start {
     align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
 }
 
-.align-items__flex-start span {
-    border: 1px solid aquamarine;
-}
 
 .align-items__flex-end {
     align-items: flex-end;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
-}
-
-.align-items__flex-end span {
-    border: 1px solid darkseagreen;
 }
 
 .align-items__center {
     align-items: center;
-    display: flex;
-    border: 1px solid red;
-    justify-content: space-between;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
-}
-
-.align-items__center span {
-    border: 1px solid chartreuse;
 }
 
 .align-items__baseline {
