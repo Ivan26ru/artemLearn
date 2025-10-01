@@ -1,10 +1,10 @@
 .flex-container {
     border: 1px solid red;
     margin: 10px;
+    display: flex;
 }
 
 .flex-container__block {
-    display: flex;
     display: -webkit-flex;
     border: 1px solid blue;
 }
@@ -21,127 +21,75 @@
 
 .flex-container__flex-direction_row {
     flex-direction: row;
-    display: flex;
 }
 
 /* ну значение по умолчанию */
 .flex-container__flex-direction-row-reverse {
     flex-direction: row-reverse;
-    display: flex;
     align-items: flex-start
 }
 
 .flex-container__flex-direction-column {
-    display: flex;
     flex-direction: column;
     border: 1px solid magenta;
 }
 
 .flex-container__flex-direction-column-reverse {
-    display: flex;
     flex-direction: column-reverse;
 }
 
 
 .flex-container__flex-wrap {
     flex-wrap: wrap;
-    display: flex;
 }
 
 .flex-container__flex-wrap-reverse {
-    display: flex;
     flex-wrap: wrap-reverse;
 }
 
 .flex-flow {
     flex-flow: column wrap-reverse;
-    display: flex;
 }
 
 /* flex-flow как я понимаю делает обобщенно */
 
-.order {
-    display: flex;
-}
-.flex-container__item_order-third{
+.flex-container__item-order-third {
     order: 3
 }
 
-.style-flex {
-    display: flex;
-}
 
-.flex-container__item-flex-active{
+.flex-container__item-flex-active {
     flex: 1 1
 }
 
-.flex-grow {
-    display: flex;
+
+.flex-container__item-grow-active {
+    flex-grow: 0.2;
 }
 
-.grow_1, .grow_2, .grow_3, .grow_6 {
-    flex-grow: 1;
-    border: 1px solid firebrick;
+.flex-container__item-grow-none {
+    flex-grow: 3;
 }
 
-.grow_4, .grow_5 {
-    flex-grow: 2;
-    border: 1px solid gold;
+.flex-shrink div{
+    flex-basis: 300px;
+}
+.flex-container__item-shrink-active {
+    flex-shrink: 6;
+}
+.flex-container__item-shrink-none{
+    flex-shrink: 0.1;
 }
 
-.flex-shrink {
-    display: flex;
-    width: 500px;
-}
-
-.flex-shrink div {
-    width: 200px;
-}
-
-.shrink_1 {
-    flex-shrink: 3;
-    border: 1px solid yellow;
-}
-
-.shrink_2 {
-    flex-shrink: 2;
-    border: 1px solid red
-}
-
-.shrink_3 {
-    flex-shrink: 1.5;
-    border: 1px solid orange;
-}
-
-.shrink_4, .shrink_5 {
-    flex-shrink: 2.5;
-    border: 1px solid silver;
-}
-
-.flex-basis {
-    display: flex;
-    padding: 10px;
-    border: 3px solid blueviolet;
-    font-size: 14px;
-    text-align: center;
-    position: relative;
-}
-
-.basis_1, .basis_3 {
-    flex-basis: 3em
-}
-
-.basis_2, .basis_4, .basis_5 {
-    flex-basis: 6em;
+.flex-container__item-basis-active {
+    flex-basis: 200px;
 }
 
 .justify-content__flex-start {
-    display: flex;
     justify-content: flex-start;
 }
 
 .justify-content__flex-end {
-    display: flex;
     justify-content: flex-end;
 }
 

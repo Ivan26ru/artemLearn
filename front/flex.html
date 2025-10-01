@@ -28,12 +28,10 @@
     <span class="flex-container__item">У меня бошка из картошки</span>
     <span class="flex-container__item">У ничего не получается</span>
 </div>
-<div class="flex-container">
-    <div class="flex-container__flex-direction-column">
-        <span class="flex-container__item">Хочу чтоб текст был в столбик</span>
-        <span class="flex-container__item">Тут так и будет</span>
-        <span class="flex-container__item">Но</span>
-    </div>
+<div class="flex-container flex-container__flex-direction-column">
+    <span class="flex-container__item">Хочу чтоб текст был в столбик</span>
+    <span class="flex-container__item">Тут так и будет</span>
+    <span class="flex-container__item">Но</span>
 </div>
 <div class="flex-container flex-container__flex-direction-column-reverse">
     <span class="flex-container__item">Fein</span>
@@ -70,7 +68,7 @@
     <span class="flex-container__item">делают так чтоб долго не придумывать классы</span>
 </div>
 <div class="flex-container order">
-    <span class="flex-container__item flex-container__item_order-third">Тут текст</span>
+    <span class="flex-container__item flex-container__item-order-third">Тут текст</span>
     <span class="flex-container__item">А тут другой текст</span>
     <span class="flex-container__item">Берри</span>
 </div>
@@ -79,51 +77,41 @@
     <span class="flex-container__item">Тема большая</span>
     <span class="flex-container__item">читать и практиковать много</span>
 </div>
-<div class="flex-container">
-    <div class="flex-grow">
-        <div class="flex-container__item">A</div>
-        <div class="flex-container__item">B</div>
-        <div class="flex-container__item">C</div>
-        <div class="flex-container__item">D</div>
-        <div class="flex-container__item">E</div>
-        <div class="flex-container__item">F</div>
-    </div>
+<div class="flex-container flex-grow">
+    <div class="flex-container__item flex-container__item-grow-active">A</div>
+    <div class="flex-container__item flex-container__item-grow-none">B</div>
+    <div class="flex-container__item">C</div>
+    <div class="flex-container__item">D</div>
+    <div class="flex-container__item">E</div>
+    <div class="flex-container__item">F</div>
 </div>
-<div class="flex-container">
-    <div class="flex-shrink">
-        <div class="flex-container__item">A</div>
-        <div class="flex-container__item">B</div>
-        <div class="flex-container__item">C</div>
-        <div class="flex-container__item">D</div>
-        <div class="flex-container__item">E</div>
-    </div>
+<div class="flex-container flex-shrink">
+    <div class="flex-container__item">item one</div>
+    <div class="flex-container__item">item two</div>
+    <div class="flex-container__item flex-container__item-shrink-active">item three</div>
+    <div class="flex-container__item flex-container__item-shrink-none">item four</div>
+    <div class="flex-container__item">item five</div>
 </div>
-<div class="flex-container">
-    <div class="flex-basis">
-        <div class="flex-container__item">A</div>
-        <div class="flex-container__item">B</div>
-        <div class="flex-container__item">C</div>
-        <div class="flex-container__item">D</div>
-        <div class="flex-container__item">E</div>
-    </div>
+<div class="flex-container flex-basis">
+    <div class="flex-container__item">A</div>
+    <div class="flex-container__item flex-container__item-basis-active">B</div>
+    <div class="flex-container__item">C</div>
+    <div class="flex-container__item">D</div>
+    <div class="flex-container__item">E</div>
 </div>
-<div class="flex-container">
-    <div class="justify-content__flex-start">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-    </div>
+<div class="flex-container justify-content__flex-start">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
 </div>
-<div class="flex-container">
-    <div class="justify-content__flex-end">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-    </div>
+<div class="flex-container justify-content__flex-end">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
 </div>
 <div class="flex-container">
     <div class="justify-content__flex-center">
