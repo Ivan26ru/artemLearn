@@ -46,7 +46,6 @@
 .flex-container__flex-wrap {
     flex-wrap: wrap;
     display: flex;
-    gap: 5px
 }
 
 .flex-container__flex-wrap-reverse {
@@ -55,8 +54,7 @@
 }
 
 .flex-flow {
-    flex-flow: column-reverse wrap-reverse;
-    flex-flow: inherit;
+    flex-flow: column wrap-reverse;
     display: flex;
 }
 
@@ -65,23 +63,15 @@
 .order {
     display: flex;
 }
-
-.order_item1 {
-    border: 1px solid blue;
-    order: 3;
-}
-
-.order_item2 {
-    border: 1px solid mediumvioletred;
-    background-color: cyan;
-    order: -1;
+.flex-container__item_order-third{
+    order: 3
 }
 
 .style-flex {
     display: flex;
 }
 
-.flex_1 {
+.flex-container__item-flex-active{
     flex: 1 1
 }
 
