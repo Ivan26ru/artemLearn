@@ -121,68 +121,44 @@
 }
 
 .align-items__baseline {
-    align-items: baseline;
-    display: flex;
-    border: 1px solid red;
-    justify-content: space-between;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
+align-items: baseline;
 }
 
 .align-self__flex-start {
-    display: flex;
-    border: 1px solid red;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
 }
-
-.flex-start {
+.flex-container__item-flex-start{
     align-self: flex-start;
 }
 
-.flex-end {
+
+.flex-container__item-flex-end {
     align-self: flex-end;
 }
 
 .align-self__flex-end {
-    display: flex;
-    border: 1px solid red;
     align-items: center;
     justify-content: space-between;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
+
 }
 
 .align-self__center {
-    display: flex;
-    border: 1px solid red;
     align-items: flex-end;
     justify-content: space-between;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
 }
 
-.center {
+.flex-container__item-flex-center {
     align-self: center;
 }
 
 .align-self__baseline {
-    display: flex;
-    border: 1px solid red;
     align-items: flex-end;
     justify-content: space-between;
-    width: 400px;
-    height: 100px;
-    margin: 10px;
+
 }
 
-.align-self__baseline_1 {
+.flex-container__item-baseline {
     align-self: baseline;
 }
 
