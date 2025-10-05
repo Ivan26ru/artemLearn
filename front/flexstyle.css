@@ -10,12 +10,12 @@
     margin: 5px;
 }
 
-.flex-container__block {
+.flex-container_block {
     display: -webkit-flex;
 }
 
 /*в первом генерирует flex-контейнер уровня блока*/
-.flex-container__line {
+.flex-container_line {
     display: -webkit-inline-flex;
     display: inline-flex;
     gap: 5px
@@ -23,30 +23,30 @@
 
 /* во втором варианте сделал из блочных тегов в строчный */
 
-.flex-container__flex-direction_row {
+.flex-container_flex-direction_row {
     flex-direction: row;
 }
 
 /* ну значение по умолчанию */
-.flex-container__flex-direction-row-reverse {
+.flex-container_flex-direction_row-reverse {
     flex-direction: row-reverse;
     align-items: flex-start
 }
 
-.flex-container__flex-direction-column {
+.flex-container_flex-direction_column {
     flex-direction: column;
 }
 
-.flex-container__flex-direction-column-reverse {
+.flex-container_flex-direction_column-reverse {
     flex-direction: column-reverse;
 }
 
 
-.flex-container__flex-wrap {
+.flex-container_flex-wrap {
     flex-wrap: wrap;
 }
 
-.flex-container__flex-wrap-reverse {
+.flex-container_flex-wrap_reverse {
     flex-wrap: wrap-reverse;
 }
 
@@ -56,21 +56,21 @@
 
 /* flex-flow как я понимаю делает обобщенно */
 
-.flex-container__item-order-third {
+.flex-container_item-order-third {
     order: 3
 }
 
 
-.flex-container__item-flex-active {
+.flex-container_item-flex-active {
     flex: 1 1
 }
 
 
-.flex-container__item-grow-active {
+.flex-container_item-grow-active {
     flex-grow: 0.2;
 }
 
-.flex-container__item-grow-none {
+.flex-container_item-grow-none {
     flex-grow: 3;
 }
 
@@ -78,110 +78,110 @@
     flex-basis: 300px;
 }
 
-.flex-container__item-shrink-active {
+.flex-container_item-shrink-active {
     flex-shrink: 6;
 }
 
-.flex-container__item-shrink-none {
+.flex-container_item-shrink-none {
     flex-shrink: 0.1;
 }
 
-.flex-container__item-basis-active {
+.flex-container_item-basis-active {
     flex-basis: 200px;
 }
 
-.justify-content__flex-start {
+.justify-content_flex-start {
     justify-content: flex-start;
 }
 
-.justify-content__flex-end {
+.justify-content_flex-end {
     justify-content: flex-end;
 }
 
-.justify-content__flex-center {
+.justify-content_flex-center {
     justify-content: center;
 }
 
-.justify-content__space-between {
+.justify-content_space-between {
     justify-content: space-between;
 }
 
-.justify-content__space-around {
+.justify-content_space-around {
     justify-content: space-around;
 }
 
-.align-items__stretch {
+.align-items_stretch {
     align-items: stretch
 }
 
 
-.align-items__flex-start {
+.align-items_flex-start {
     align-items: flex-start;
 }
 
 
-.align-items__flex-end {
+.align-items_flex-end {
     align-items: flex-end;
 }
 
-.align-items__center {
+.align-items_center {
     align-items: center;
 }
 
-.align-items__baseline {
+.align-items_baseline {
     align-items: baseline;
 }
 
-.align-self__flex-start {
+.align-self_flex-start {
     align-items: center;
     justify-content: space-between;
 }
 
-.flex-container__item-flex-start {
+.flex-container_item-flex-start {
     align-self: flex-start;
 }
 
 
-.flex-container__item-flex-end {
+.flex-container_item-flex-end {
     align-self: flex-end;
 }
 
-.align-self__flex-end {
+.align-self_flex-end {
     align-items: center;
     justify-content: space-between;
 
 }
 
-.align-self__center {
+.align-self_center {
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.flex-container__item-flex-center {
+.flex-container_item-flex-center {
     align-self: center;
 }
 
-.align-self__baseline {
+.align-self_baseline {
     align-items: flex-end;
     justify-content: space-between;
 
 }
 
-.flex-container__item-baseline {
+.flex-container_item-baseline {
     align-self: baseline;
 }
 
-.align-self__stretch {
+.align-self_stretch {
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.flex-container__item-as-stretch {
+.flex-container_item-as-stretch {
     align-self: stretch;
 
 }
 
-.align-content__flex-start {
+.align-content_flex-start {
     width: 400px;
     height: 100px;
     margin: 10px;
@@ -190,7 +190,7 @@
 }
 
 
-.align-content__flex-end {
+.align-content_flex-end {
     width: 400px;
     height: 100px;
     margin: 10px;
@@ -199,7 +199,7 @@
 }
 
 
-.align-content__center {
+.align-content_center {
     width: 400px;
     height: 100px;
     margin: 10px;
@@ -208,7 +208,7 @@
 }
 
 
-.align-content__space-between {
+.align-content_space-between {
     width: 200px;
     height: 300px;
     margin: 10px;
@@ -217,7 +217,7 @@
 }
 
 
-.align-content__space-around {
+.align-content_space-around {
     width: 200px;
     height: 200px;
     margin: 10px;
@@ -225,7 +225,7 @@
     flex-wrap: wrap
 }
 
-.align-content__stretch {
+.align-content_stretch {
     height: 200px;
     align-content: stretch;
 }
