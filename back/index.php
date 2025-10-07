@@ -1,6 +1,9 @@
 <?php
-echo 1234+111; // чтобы
 
+$name = "Артём";
+
+echo "Привет " . $name ."<br>";
+var_dump($name);
 
 
 
