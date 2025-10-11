@@ -23,21 +23,21 @@
 
 /* во втором варианте сделал из блочных тегов в строчный */
 
-.flex-container_flex-direction_row {
+.flex-container_flex-direction-row {
     flex-direction: row;
 }
 
 /* ну значение по умолчанию */
-.flex-container_flex-direction_row-reverse {
+.flex-container_flex-direction-row-reverse {
     flex-direction: row-reverse;
     align-items: flex-start
 }
 
-.flex-container_flex-direction_column {
+.flex-container_flex-direction-column {
     flex-direction: column;
 }
 
-.flex-container_flex-direction_column-reverse {
+.flex-container_flex-direction-column-reverse {
     flex-direction: column-reverse;
 }
 
@@ -46,7 +46,7 @@
     flex-wrap: wrap;
 }
 
-.flex-container_flex-wrap_reverse {
+.flex-container_flex-wrap-reverse {
     flex-wrap: wrap-reverse;
 }
 
