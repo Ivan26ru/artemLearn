@@ -20,7 +20,13 @@ var_dump(25/7); // float(3,571428571428571) - округление
 var_dump((int)(25/7)); // float(3) - округление в меньшую сторону
 var_dump(round(25/7)); // float(4) - округление в большую сторону
 // Деление
-
+function foo($value): int
+{
+    return $value;
+}
+var_dump(foo(8.1)); // как я понимаю до PHP 8.1.0 выдавалась не число, а что-то типа ошибки
+var_dump((int) 8.1);
+var_dump(intval(8.1));
 
 
 
