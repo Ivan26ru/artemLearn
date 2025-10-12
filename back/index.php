@@ -180,6 +180,8 @@ class example1
 bar
 EOT;
 }
+$juice = "яблочного";
+echo "Он выпил немного $juice сока." . PHP_EOL;
 
 
 
