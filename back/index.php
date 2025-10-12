@@ -92,7 +92,7 @@ a
 END, 'd e f'];
 var_dump($values);
 
-//$values = [<<<END
+// $values = [<<<END
 // a
 // b
 // END ING
