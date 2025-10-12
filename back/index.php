@@ -108,6 +108,30 @@ var_dump($values);
 // Parse error: Invalid body indentation level (expecting an indentation level of at least 4)
 // in C:\www\artemLearn\OSPanel\home\learnfirstproject\back\index.php on line 104
 
+$str = <<<EOD
+Пример строки, которую записали в heredoc-синтаксисом в несколько строк
+EOD;
+class Foo
+{
+    var $foo;
+    var $bar;
+
+    function __construct()
+    {
+        $this->foo = 'Foo';
+        $this->bar = array('Bar1', 'Bar2', 'Bar3');
+    }
+}
+
+$foo = new Foo();
+$name = 'Расмус';
+echo <<<EOT
+Меня зовут "$name". Я печатаю $foo->foo.
+Теперь я вывожу {$foo->bar[1]}.
+Это выведет заглавную букву 'А': \x41
+EOT;
+
+
 
 
 
