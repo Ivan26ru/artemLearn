@@ -63,6 +63,27 @@ END; // Идентификатору закрытия нельзя отступ�
 // Parse error: Invalid body indentation level (expecting an indentation level of at least 3) in
 // C:\www\artemLearn\OSPanel\home\learnfirstproject\back\index.php on line 59
 
+//{
+//    echo <<<END
+//     a
+//        END;
+//}
+// Отступ тела отличается от отступа маркера окончания:
+// тело — 5 пробелов, маркер окончания — 2 символа табуляции
+//{
+//    echo <<<END
+//        a
+//     END;
+//}
+// Смешивание пробелов и табуляций в теле:
+// тело — 4 пробела + 1 символ табуляции, маркер окончания — 5 пробелов
+//{
+//    echo <<<END
+//          a
+//         END;
+// }
+// Parse error: Invalid body indentation level (expecting an indentation level of at least 8)
+// in C:\www\artemLearn\OSPanel\home\learnfirstproject\back\index.php on line 67
 
 
 
