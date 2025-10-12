@@ -183,6 +183,20 @@ EOT;
 $juice = "яблочного";
 echo "Он выпил немного $juice сока." . PHP_EOL;
 
+$juices = array("яблочного", "апельсинового", "string_key" =>"фиолетового");
+echo "Он выпил немного $juices[0] сока.";
+echo PHP_EOL;
+echo "Он выпил немного $juices[1] сока.";
+echo PHP_EOL;
+echo "Он выпил немного $juices[string_key] сока.";
+echo PHP_EOL;
+class A
+{
+    public $s = "string";
+}
+$o = new A();
+echo "Значение свойства объекта: $o->s.";
+
 
 
 
