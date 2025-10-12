@@ -174,6 +174,12 @@ echo <<<'EOT'
 Теперь я печатаю {$foo->bar[1]}.
 Это не выведет заглавную 'А': \x41
 EOT;
+class example1
+{
+    public $bar = <<<'EOT'
+bar
+EOT;
+}
 
 
 
