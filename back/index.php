@@ -53,7 +53,15 @@ echo <<<END
      b
     c
     END;
-// Отступ в четыре пробела перед маркером закрытия
+// Отступ в четыре пробела перед маркером закрытия4
+
+echo <<<END
+  a
+ b
+c
+END; // Идентификатору закрытия нельзя отступать дальше строк тела(если поставить не сколько пробелов будет ошибка которая снизу
+// Parse error: Invalid body indentation level (expecting an indentation level of at least 3) in
+// C:\www\artemLearn\OSPanel\home\learnfirstproject\back\index.php on line 59
 
 
 
