@@ -131,6 +131,24 @@ echo <<<EOT
 Это выведет заглавную букву 'А': \x41
 EOT;
 
+function example()
+{
+    static $bar = <<<LABEL
+Здесь ничего нет...
+LABEL;
+}
+class example
+{
+    const BAR = <<<FOOBAR
+Пример использования константы
+FOOBAR;
+
+    public $baz = <<<FOOBAR
+Пример использования поля
+FOOBAR;
+}
+
+
 
 
 
