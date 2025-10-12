@@ -157,6 +157,23 @@ echo <<<'EOD'
 Обратные слеши выводятся без обработки, например, \\ и \'.
 EOD;
 
+class doc
+{
+    public $foo;
+    public $bar;
+    function __construct()
+    {
+        $this->foo = 'Foo';
+        $this->bar = array('Bar1', 'Bar2', 'Bar3');
+    }
+}
+$foo = new foo;
+$name = 'Расмус';
+echo <<<'EOT'
+Меня зовут "$name". Я печатаю $foo->foo.
+Теперь я печатаю {$foo->bar[1]}.
+Это не выведет заглавную 'А': \x41
+EOT;
 
 
 
