@@ -148,6 +148,10 @@ FOOBAR;
 FOOBAR;
 }
 
+echo <<<"FOOBAR"
+Привет, мир!
+FOOBAR;
+
 
 
 
