@@ -99,6 +99,14 @@ var_dump($values);
 // END, 'd e f'];
 // Parse error: syntax error, unexpected identifier "ING", expecting "]" in C:\www\artemLearn\OSPanel\home\learnfirstproject\back\index.php on line 98
 
+// class Foo {
+//    public $bar = <<<EOT
+// bar
+//    EOT;
+// }
+// Отступ перед закрывающим идентификатором недопустим
+// Parse error: Invalid body indentation level (expecting an indentation level of at least 4)
+// in C:\www\artemLearn\OSPanel\home\learnfirstproject\back\index.php on line 104
 
 
 
