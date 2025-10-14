@@ -202,6 +202,46 @@ echo "Символ с индексом -2 равен $string[-2].", PHP_EOL;
 $string[-3] = 'o';
 echo "Изменение символа на позиции -3 на 'o' дает следующую строку: $string.", PHP_EOL;
 
+const DATA_KEY = 'const-key';
+$great = 'здорово';
+$arr= [
+    '1',
+    '2',
+    '3',
+    [41, 42, 43],
+    'key' => 'Ключ со знаком минуса',
+    'const-key' => 'Ключ со знаком минуса',
+    'foo' => ['foo1', 'foo2', 'foo3']
+];
+
+echo "Это { $great}";
+// выводит: Это { здорово}
+echo "Это {$great}";
+// выводит: Это здорово
+class Square
+{
+    public $width;
+
+    public function __construct(int $width)
+    {
+        $this->width = $width;
+    }
+}
+$square = new Square(5);
+
+echo "Ширина квадрата составляет {$square->width}00 сантиметров";
+
+echo "Это работает: {$arr['key']}";
+// работает, ключи, взятые в кавычки, работают только с синтаксисом фигурных скобок
+echo "Это работает {$arr[3][2]}}";
+echo "Работает: {$arr[DATA_KEY]}";
+echo "Это работает: {$arr['foo'][2]}";
+//echo "Работает: {$obj->values[3]->name}";
+//echo "Работает: {$obj->$staticProp}";
+echo "C:\directory\{$great}.txt";
+echo "C:\\directory\\{$great}.txt";
+
+
 
 
 
