@@ -313,5 +313,12 @@ $array2 = [
 ];
 var_dump($array1, $array2);
 
+$array = array(
+    1 => "a",
+    "1" => "b",
+    1.5 => "c",
+    true => "d",
+);
+var_dump($array);
 
 ?>
