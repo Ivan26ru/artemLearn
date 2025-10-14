@@ -330,4 +330,11 @@ $array = array(
 );
 var_dump($array);
 
+$array = array("foo", "bar", "hallo", "world");
+var_dump($array);
+
+
+
+
+
 ?>
