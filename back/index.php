@@ -241,7 +241,24 @@ echo "Это работает: {$arr['foo'][2]}";
 echo "C:\directory\{$great}.txt";
 echo "C:\\directory\\{$great}.txt";
 
+$str = 'This is a test.';
+$first = $str[0];
+var_dump($first);
+// Получение первого символа строки
 
+$third = $str[2];
+var_dump($third);
+// получение третьего символа строки
+
+$str = 'This is still a test.';
+$last = $str[strlen($str) - 1];
+var_dump($last);
+// получение последнего символа строки
+
+$str = 'Look at the sea';
+$srt[strlen($str) - 1] = 'e';
+var_dump($srt);
+// изменение последнего символа строки
 
 
 
