@@ -273,8 +273,24 @@ foreach ($keys as $keyToTry) {
     echo PHP_EOL;
 }
 
+$foo = True;
 
+$action = "show_version";
+$show_separators = true;
 
+if ($action == "show_version") {
+    echo "Версия 1.23";
+}
+// == - оператор, который проверяет эквивалентность и возвращает логическое значение
+
+if ($show_separators == TRUE) {
+    echo "<hr>\n";
+}
+// сравнение со значением true необязательно, ...
+
+if ($show_separators) {
+    echo "<hr>\n";
+}
 
 
 
