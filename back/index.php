@@ -333,6 +333,14 @@ var_dump($array);
 $array = array("foo", "bar", "hallo", "world");
 var_dump($array);
 
+$array = array(
+    "a",
+    "b",
+    6=>"c",
+    "d",
+);
+var_dump($array);
+
 
 
 
