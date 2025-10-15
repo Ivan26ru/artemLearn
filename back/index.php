@@ -590,6 +590,10 @@ var_dump($switching);
 $empty = array();
 var_dump($empty);
 
+$colors = array('красный', 'голубой', 'зеленый', 'желтый');
+foreach ($colors as $color) {
+    echo "Вам нравится $color?\n";
+}
 
 
 
