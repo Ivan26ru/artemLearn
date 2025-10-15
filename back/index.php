@@ -509,6 +509,17 @@ class A
 
 var_export((array) new A());
 
+class B
+{
+    private $B;
+}
+
+class C extends B
+{
+    private $B;
+    public $BB;
+}
+var_export((array) new B());
 
 
 
