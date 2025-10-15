@@ -594,7 +594,12 @@ $colors = array('красный', 'голубой', 'зеленый', 'желт�
 foreach ($colors as $color) {
     echo "Вам нравится $color?\n";
 }
-
+$colors = array('красный', 'голубой', 'зеленый', 'желтый');
+foreach ($colors as &$color) {
+    $color = mb_strtoupper($color);
+}
+unset($color);
+print_r($colors);
 
 
 
