@@ -495,6 +495,19 @@ $error_descriptions[1] = "Произошла фатальная ошибка";
 $error_descriptions[2] = "PHP выдал предупреждение";
 $error_descriptions[8] = "Это просто уведомление";
 
+class A
+{
+    private $B;
+    protected $C;
+    public $D;
+
+    function __construct()
+    {
+        $this->{1} = null;
+    }
+}
+
+var_export((array) new A());
 
 
 
