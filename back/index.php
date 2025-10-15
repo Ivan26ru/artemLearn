@@ -419,6 +419,10 @@ foreach ($source_array as [$id, $name]) {
     echo "{$id}: '{$name}'\n";
 }
 
+$source_array = ['foo', 'bar', 'baz'];
+[, , $baz] = $source_array;
+echo $baz;
+
 
 
 ?>
