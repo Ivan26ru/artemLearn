@@ -423,6 +423,12 @@ $source_array = ['foo', 'bar', 'baz'];
 [, , $baz] = $source_array;
 echo $baz;
 
+$source_array = ['foo' => 1, 'bar' => 2, 'baz' => 3];
+['baz' => $three] = $source_array;
+echo $three, PHP_EOL;
+$source_array = ['foo', 'bar', 'baz'];
+[2 => $baz] = $source_array;
+echo $baz, PHP_EOL;
 
 
 ?>
