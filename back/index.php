@@ -398,12 +398,18 @@ $secondElement = getArray()[1];
 var_dump($secondElement);
 
 $arr = array(5 => 1, 12 => 2);
-$arr[] = 56;
-$arr["x"] = 42;
-unset ($arr[5]);
+$arr[] = 56;// В этом месте скрипта такое аналогично присваиванию $arr[13] = 56;
+$arr["x"] = 42; // Добавление в массив нового элемента с ключом "x"
+unset ($arr[5]); // Удаление элемента из массива
 var_dump($arr);
-unset($arr);
+unset($arr); // Это удаляет весь массив
 var_dump($arr);
+
+$source_array = ['foo', 'bar', 'baz'];
+[$foo, $bar, $baz] = $source_array;
+echo $foo, PHP_EOL;
+echo $bar, PHP_EOL;
+echo $baz, PHP_EOL;
 
 
 
