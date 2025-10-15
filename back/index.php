@@ -411,6 +411,14 @@ echo $foo, PHP_EOL;
 echo $bar, PHP_EOL;
 echo $baz, PHP_EOL;
 
+$source_array = [
+    [1, 'John'],
+    [2, 'Jane']
+];
+foreach ($source_array as [$id, $name]) {
+    echo "{$id}: '{$name}'\n";
+}
+
 
 
 ?>
