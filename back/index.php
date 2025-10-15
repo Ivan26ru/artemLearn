@@ -430,5 +430,11 @@ $source_array = ['foo', 'bar', 'baz'];
 [2 => $baz] = $source_array;
 echo $baz, PHP_EOL;
 
+$a = 1;
+$b = 2;
+[$b, $a] = [$a, $b];
+echo $a, PHP_EOL;
+echo $b, PHP_EOL;
+
 
 ?>
