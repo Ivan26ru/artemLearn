@@ -615,6 +615,29 @@ var_dump($files);
 sort($files);
 print_r($files);
 
+$fruits = array ( "fruits"  => array ( "a" => "апельсин",
+    "b" => "банан",
+    "c" => "яблоко"
+),
+"numbers" => array (1,
+    2,
+    3,
+    4,
+    5,
+    6),
+"holes" => array ("первая",
+    5 => "вторая",
+    "третья"
+)
+);
+var_dump($fruits);
+echo $fruits["holes"][5];
+echo $fruits["fruits"]["a"];
+unset($fruits["holes"][0]);
+
+$juices["apple"]["green"] = "хороший";
+var_dump($juices);
+
 
 
 
