@@ -442,5 +442,18 @@ var_dump($a);
 $b = array_values($a);
 var_dump($b);
 
+error_reporting(E_ALL);
+ini_set('display_errors', true);
+ini_set('html_errors', false);
+$array = array(1,2);
+$count = count($array);
+for ($i = 0; $i < $count; $i++) {
+    echo "\nПроверяем $i: \n";
+    echo "Плохо: " . $array['$i'] . "\n";
+    echo "Хорошо: " . $array[$i] . "\n";
+    echo "Плохо: {$array['$i']}\n";
+    echo "Хорошо: {$array[$i]}\n";
+}
+
 
 ?>
