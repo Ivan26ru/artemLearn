@@ -397,4 +397,14 @@ function getArray()
 $secondElement = getArray()[1];
 var_dump($secondElement);
 
+$arr = array(5 => 1, 12 => 2);
+$arr[] = 56;
+$arr["x"] = 42;
+unset ($arr[5]);
+var_dump($arr);
+unset($arr);
+var_dump($arr);
+
+
+
 ?>
