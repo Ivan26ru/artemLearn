@@ -2,7 +2,7 @@
 
 $name = "Артём";
 
-echo "Привет " . $name ."<br>";
+echo "Привет " . $name . "<br>";
 var_dump($name);
 
 $a = 1234; // десятичное число
@@ -14,18 +14,19 @@ $a = 1_234_567; // Десятичное число
 // Целые числа
 $large_number = 50000000000000000000;
 var_dump($large_number); // float (5.0E+19)
-var_dump(PHP_INT_MAX+1); // В 32-разрядной системе system: float(2147483648) // В 64-разрядной системе: float(9.2233720368548E+18)
+var_dump(PHP_INT_MAX + 1); // В 32-разрядной системе system: float(2147483648) // В 64-разрядной системе: float(9.2233720368548E+18)
 // Переполнения целых чисел
-var_dump(25/7); // float(3,571428571428571) - округление
-var_dump((int)(25/7)); // float(3) - округление в меньшую сторону
-var_dump(round(25/7)); // float(4) - округление в большую сторону
+var_dump(25 / 7); // float(3,571428571428571) - округление
+var_dump((int)(25 / 7)); // float(3) - округление в меньшую сторону
+var_dump(round(25 / 7)); // float(4) - округление в большую сторону
 // Деление
 function foo($value): int
 {
     return $value;
 }
+
 var_dump(foo(8.1)); // как я понимаю до PHP 8.1.0 выдавалась не число, а что-то типа ошибки
-var_dump((int) 8.1);
+var_dump((int)8.1);
 var_dump(intval(8.1));
 // Приведение из числа с плавающей точкой
 echo 'Простая строка', PHP_EOL;
@@ -111,6 +112,7 @@ var_dump($values);
 $str = <<<EOD
 Пример строки, которую записали в heredoc-синтаксисом в несколько строк
 EOD;
+
 class Foo
 {
     var $foo;
@@ -137,6 +139,7 @@ function example()
 Здесь ничего нет...
 LABEL;
 }
+
 class example
 {
     const BAR = <<<FOOBAR
@@ -161,12 +164,14 @@ class doc
 {
     public $foo;
     public $bar;
+
     function __construct()
     {
         $this->foo = 'Foo';
         $this->bar = array('Bar1', 'Bar2', 'Bar3');
     }
 }
+
 $foo = new foo;
 $name = 'Расмус';
 echo <<<'EOT'
@@ -174,26 +179,30 @@ echo <<<'EOT'
 Теперь я печатаю {$foo->bar[1]}.
 Это не выведет заглавную 'А': \x41
 EOT;
+
 class example1
 {
     public $bar = <<<'EOT'
 bar
 EOT;
 }
+
 $juice = "яблочного";
 echo "Он выпил немного $juice сока." . PHP_EOL;
 
-$juices = array("яблочного", "апельсинового", "string_key" =>"фиолетового");
+$juices = array("яблочного", "апельсинового", "string_key" => "фиолетового");
 echo "Он выпил немного $juices[0] сока.";
 echo PHP_EOL;
 echo "Он выпил немного $juices[1] сока.";
 echo PHP_EOL;
 echo "Он выпил немного $juices[string_key] сока.";
 echo PHP_EOL;
+
 class A
 {
     public $s = "string";
 }
+
 $o = new A();
 echo "Значение свойства объекта: $o->s.";
 
@@ -204,7 +213,7 @@ echo "Изменение символа на позиции -3 на 'o' дает
 
 const DATA_KEY = 'const-key';
 $great = 'здорово';
-$arr= [
+$arr = [
     '1',
     '2',
     '3',
@@ -217,6 +226,7 @@ $arr= [
 echo "Это { $great}";
 // выводит: Это { здорово}
 echo "Это {$great}";
+
 // выводит: Это здорово
 class Square
 {
@@ -227,6 +237,7 @@ class Square
         $this->width = $width;
     }
 }
+
 $square = new Square(5);
 
 echo "Ширина квадрата составляет {$square->width}00 сантиметров";
@@ -261,7 +272,7 @@ var_dump($srt);
 // изменение последнего символа строки
 
 $str = 'abc';
-$keys = ['1', '1.0', 'x', '1x' ];
+$keys = ['1', '1.0', 'x', '1x'];
 
 foreach ($keys as $keyToTry) {
     var_dump(isset($str[$keyToTry]));
@@ -294,13 +305,13 @@ if ($show_separators) {
 
 var_dump((bool)""); // bool (false)
 var_dump((bool)"0"); // bool (false)
-var_dump((bool) 1); // bool (true)
-var_dump((bool) -2); // bool (true)
-var_dump((bool) "foo"); // bool (true)
-var_dump((bool) 2.3e5); // bool (true)
-var_dump((bool) array(12)); // bool (true)
-var_dump((bool) array()); // bool (true)
-var_dump((bool) "false"); // bool (false)
+var_dump((bool)1); // bool (true)
+var_dump((bool)-2); // bool (true)
+var_dump((bool)"foo"); // bool (true)
+var_dump((bool)2.3e5); // bool (true)
+var_dump((bool)array(12)); // bool (true)
+var_dump((bool)array()); // bool (true)
+var_dump((bool)"false"); // bool (false)
 
 
 $array1 = array(
@@ -336,15 +347,15 @@ var_dump($array);
 $array = array(
     "a",
     "b",
-    6=>"c",
+    6 => "c",
     "d",
 );
 var_dump($array);
 
 $array = array(
-    1=>'a',
-    "1"=>"b", // Значение "b" перезапишет значение "a"
-    1.5=>'c', // значение "c" перезапишет в "b"
+    1 => 'a',
+    "1" => "b", // Значение "b" перезапишет значение "a"
+    1.5 => 'c', // значение "c" перезапишет в "b"
     -1 => 'd',
     '01' => 'e', // строка не перезапишет ключ 1, поскольку она не целочисленная
     '1.5' => 'f', // строка не перезапишет ключ 1, поскольку она не целочисленная
@@ -363,5 +374,18 @@ $array[-5] = 1;
 $array[] = 2;
 var_dump($array);
 
+$array = array(
+    "foo" => "bar",
+    42    => 24,
+    "multi" => array(
+        "dimensional" => array(
+            "array" => "foo"
+        )
+    )
+);
+
+var_dump($array["foo"]);
+var_dump($array[42]);
+var_dump($array["multi"]["dimensional"]["array"]);
 
 ?>
