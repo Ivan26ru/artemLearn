@@ -358,7 +358,10 @@ $array = array(
 
 var_dump($array);
 
-
+$array = [];
+$array[-5] = 1;
+$array[] = 2;
+var_dump($array);
 
 
 ?>
