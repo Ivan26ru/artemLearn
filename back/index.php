@@ -455,5 +455,79 @@ for ($i = 0; $i < $count; $i++) {
     echo "Хорошо: {$array[$i]}\n";
 }
 
+error_reporting(E_ALL);
+// Показываем все ошибки
+$arr = array('fruit' => 'apple', 'veggie' => 'carrot');
+echo $arr['fruit'], PHP_EOL; // apple
+echo $arr['veggie'], PHP_EOL; // carrot
+// Верно
+try {
+    echo $arr[fruit];
+} catch (Error $e) {
+    echo get_class($e), ': ', $e->getMessage(), PHP_EOL;
+}// Неверно. Это не работает и выбрасывает PHP-ошибку Error из-за неопределённой константы
+// с названием fruit
+//
+// Error: Undefined constant "fruit"
+
+define ('fruit', 'veggie');// Определим константу, чтобы посмотреть, что произоёдет. Присвоим константе с названием fruit значение "veggie".
+echo $arr['fruit'], PHP_EOL;
+echo $arr[fruit], PHP_EOL;
+
+echo "Hello $arr[fruit]", PHP_EOL; // Hello apple
+// Доступ по ключу без кавычек сработает внутри строки. PHP не ищет константы внутри строк,
+// поэтому ошибка здесь не возникнет
+echo "Hello {$arr[fruit]}", PHP_EOL; // hello carrot
+echo "Hello {$arr['fruit']}", PHP_EOL; // hello apple
+
+echo "Hello " . $arr['fruit'], PHP_EOL;
+
+// print "Hello $arr['fruit']";
+// print "Hello $_GET['foo']"
+
+echo $arr[somefunc($bar)];
+
+$error_descriptions[E_ERROR] = "Произошла фатальная ошибка";
+$error_descriptions[E_WARNING] = "PHP сообщает о предупреждении";
+$error_descriptions[E_NOTICE] = "Это лишь неофициальное замечание";
+
+$error_descriptions[1] = "Произошла фатальная ошибка";
+$error_descriptions[2] = "PHP выдал предупреждение";
+$error_descriptions[8] = "Это просто уведомление";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ?>
