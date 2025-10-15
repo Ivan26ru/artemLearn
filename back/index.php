@@ -604,6 +604,13 @@ print_r($colors);
 $firstquarter = array(1 => 'январь', 'февраль', 'март');
 print_r($firstquarter);
 
+$handle = opendir('.');
+while (false !== ($file = readdir($handle))) {
+    $files[] = $file;
+}
+closedir($handle);
+
+var_dump($files);
 
 
 
