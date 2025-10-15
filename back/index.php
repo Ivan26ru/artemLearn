@@ -388,4 +388,13 @@ var_dump($array["foo"]);
 var_dump($array[42]);
 var_dump($array["multi"]["dimensional"]["array"]);
 
+
+
+function getArray()
+{
+    return array(1, 2, 3);
+}
+$secondElement = getArray()[1];
+var_dump($secondElement);
+
 ?>
