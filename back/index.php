@@ -638,8 +638,14 @@ unset($fruits["holes"][0]);
 $juices["apple"]["green"] = "хороший";
 var_dump($juices);
 
+$arr1 = array(2, 3);
+$arr2 = $arr1;
+$arr2[] = 4;
 
+$arr3 = &$arr1;
+$arr3[] = 4;
 
+var_dump($arr1, $arr2, $arr3);
 
 
 
