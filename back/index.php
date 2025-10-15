@@ -647,6 +647,7 @@ $arr3[] = 4;
 
 var_dump($arr1, $arr2, $arr3);
 
+$var = null;
 
 
 
