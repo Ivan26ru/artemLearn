@@ -650,6 +650,14 @@ var_dump($arr1, $arr2, $arr3);
 $var = null;
 
 
+if($a > $b)
+    echo "a больше b";
+
+if($a > $b) {
+    echo "a больше b";
+    $b = $a;
+}
+
 
 
 
