@@ -436,5 +436,11 @@ $b = 2;
 echo $a, PHP_EOL;
 echo $b, PHP_EOL;
 
+$a = array(1 => 'один', 2 => 'два', 3 => 'три');
+unset($a[2]);
+var_dump($a);
+$b = array_values($a);
+var_dump($b);
+
 
 ?>
