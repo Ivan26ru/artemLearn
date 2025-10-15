@@ -403,7 +403,7 @@ $arr["x"] = 42; // Добавление в массив нового элеме�
 unset ($arr[5]); // Удаление элемента из массива
 var_dump($arr);
 unset($arr); // Это удаляет весь массив
-var_dump($arr);
+// var_dump($arr);
 
 $source_array = ['foo', 'bar', 'baz'];
 [$foo, $bar, $baz] = $source_array;
@@ -485,7 +485,7 @@ echo "Hello " . $arr['fruit'], PHP_EOL;
 // print "Hello $arr['fruit']";
 // print "Hello $_GET['foo']"
 
-echo $arr[somefunc($bar)];
+// echo $arr[somefunc($bar)];
 
 $error_descriptions[E_ERROR] = "Произошла фатальная ошибка";
 $error_descriptions[E_WARNING] = "PHP сообщает о предупреждении";
@@ -495,17 +495,17 @@ $error_descriptions[1] = "Произошла фатальная ошибка";
 $error_descriptions[2] = "PHP выдал предупреждение";
 $error_descriptions[8] = "Это просто уведомление";
 
-class A
-{
-    private $B;
-    protected $C;
-    public $D;
+// class A
+// {
+// private $B;
+//    protected $C;
+//     public $D;
 
-    function __construct()
-    {
-        $this->{1} = null;
-    }
-}
+//    function __construct()
+//    {
+//        $this->{1} = null;
+//    }
+//}
 
 var_export((array) new A());
 
@@ -521,6 +521,31 @@ class C extends B
 }
 var_export((array) new B());
 
+$arr1 = [1, 2, 3];
+$arr2 = [...$arr1];
+$arr3 = [0, ...$arr1];
+$arr4 = [...$arr1, ...$arr2, 111];
+$arr5 = [...$arr1, ...$arr1];
+
+function getArr()
+{
+    return ['a', 'b'];
+}
+$arr6 = [...getArr(), 'c' => 'd'];
+var_dump($arr1, $arr2, $arr3, $arr4, $arr5, $arr6);
+
+$arr1 = ["a" => 1];
+$arr2 = ["a" => 2];
+$arr3 = ["a" => 0, ...$arr1, ...$arr2];
+var_dump($arr3);
+// Строковый ключ
+
+$arr4 = [1,2,3];
+$arr5 = [4,5,6];
+$arr6 = [...$arr4, ...$arr5];
+var_dump($arr6); // [1, 2, 3, 4, 5, 6]
+// Целочисленный ключ
+// Распаковка массивов создаёт массив [0 => 1, 1 => 2, 2 => 3, 3 => 4, 4 => 5, 5 => 6], в котором исходные целочисленные ключи не сохраняются
 
 
 
