@@ -64,3 +64,20 @@ $array = [
 foreach ($array as [$a, $b, $c]) {
     echo "A: $a; B: $b; C: $c\n";
 }
+
+$arr = [1, 2, 3, 4];
+foreach ($arr as &$value) {
+    $value = $value * 2;
+}
+
+unset($value);
+
+$arr = [1, 2, 3, 4];
+foreach ($arr as &$value) {
+    $value = $value * 2;
+}
+
+foreach ($arr as $key => $value) {
+    echo "{$key} => {$value} ";
+    print_r($arr);
+}
