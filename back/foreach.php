@@ -30,3 +30,37 @@ foreach ($grid as $y => $row) {
 foreach (range(1, 10) as $value) {
     echo "$value\n";
 }
+
+$array = [
+    [1, 2],
+    [3, 4],
+];
+
+foreach ($array as [$a, $b]) {
+    echo "A: $a; B: $b\n";
+}
+foreach ($array as list($a, $b)) {
+    echo "A: $a; B: $b\n";
+}
+
+$array = [
+    [1, 2, 5],
+    [3, 4, 6],
+];
+
+foreach ($array as [$a, $b]) {
+    // переменная $c не указана
+    echo "$a $b\n";
+}
+foreach ($array as [, , $c]) {
+    // пропущено $a и $b
+    echo "$c\n";
+}
+
+$array = [
+    [1, 2],
+    [3, 4],
+];
+foreach ($array as [$a, $b, $c]) {
+    echo "A: $a; B: $b; C: $c\n";
+}
