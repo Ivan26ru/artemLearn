@@ -81,3 +81,7 @@ foreach ($arr as $key => $value) {
     echo "{$key} => {$value} ";
     print_r($arr);
 }
+
+foreach ([1, 2, 3, 4] as &$value) {
+    $value = $value * 2;
+}
