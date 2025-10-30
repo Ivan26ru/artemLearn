@@ -30,3 +30,11 @@ function calculateCD($a, $b)
 calculateCD(8, 6);
 
 
+function calculateIdentity($a, $b)
+{
+    $identity = $a * $a + 2 * $a * $b + $b * $b;
+    echo "a=$a <br>";
+    echo "b=$b <br>";
+    echo "(a+b)^2=$identity <br>";
+}
+calculateIdentity(3, 5);
