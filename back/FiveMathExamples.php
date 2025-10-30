@@ -29,7 +29,7 @@ function calculateCD($a, $b)
 }
 calculateCD(8, 6);
 
-
+// Тождество
 function calculateIdentity($a, $b)
 {
     $identity = $a * $a + 2 * $a * $b + $b * $b;
@@ -38,3 +38,13 @@ function calculateIdentity($a, $b)
     echo "(a+b)^2=$identity <br>";
 }
 calculateIdentity(3, 5);
+
+// Средняя линия трапеции (Middle line trapezoid)
+function calculateMLT($a, $b)
+{
+    $l = $a + $b / 2;
+    echo "a=$a <br>";
+    echo "b=$b <br>";
+    echo "l=$l <br>";
+}
+calculateMLT(4, 8);
