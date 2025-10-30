@@ -9,13 +9,24 @@ function calculateWay($speed, $time)
 }
 calculateWay(60, 12 );
 
-// сумма геометрическое прогрессии
-function calculateSGM($b, $q)
+// сумма геометрическое прогрессии(SGP-sum geometric progression)
+function calculateSGP($b, $q)
 {
-    $SGM = $b * 1 - $b * $q / 1-$q;
+    $SGP = $b * 1 - $b * $q / 1-$q;
     echo "b=$b<br>";
     echo "q=$q <br>";
-    echo "SGM=$SGM <br>";
+    echo "SGM=$SGP <br>";
 }
-calculateSGM(40,50);
+calculateSGP(40,50);
+
+// куб разности = CD(cube difference)
+function calculateCD($a, $b)
+{
+    $CD=$a*$a*$a-3*$a*$a*$b+3*$a*$b*$b-$b*$b*$b;
+    echo "a=$a <br>";
+    echo "b=$b <br>";
+    echo "CD=$CD <br>";
+}
+calculateCD(8, 6);
+
 
