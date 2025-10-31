@@ -9,25 +9,25 @@ function calculateWay($speed, $time)
 }
 calculateWay(60, 12 );
 
-// сумма геометрическое прогрессии(SGP-sum geometric progression)
-function calculateSGP($b, $q)
+// сумма геометрическое прогрессии
+function calculateSumGeometricProgression($b, $q)
 {
     $SGP = $b * 1 - $b * $q / 1-$q;
     echo "b=$b<br>";
     echo "q=$q <br>";
     echo "SGM=$SGP <br>";
 }
-calculateSGP(40,50);
+calculateSumGeometricProgression(40,50);
 
-// куб разности = CD(cube difference)
-function calculateCD($a, $b)
+// куб разности
+function calculateCubeDifference($a, $b)
 {
     $CD=$a*$a*$a-3*$a*$a*$b+3*$a*$b*$b-$b*$b*$b;
     echo "a=$a <br>";
     echo "b=$b <br>";
     echo "CD=$CD <br>";
 }
-calculateCD(8, 6);
+calculateCubeDifference(8, 6);
 
 // Тождество
 function calculateIdentity($a, $b)
@@ -39,12 +39,12 @@ function calculateIdentity($a, $b)
 }
 calculateIdentity(3, 5);
 
-// Средняя линия трапеции (Middle line trapezoid)
-function calculateMLT($a, $b)
+// Средняя линия трапеции
+function calculateMiddleLineTrapezoid($a, $b)
 {
     $l = $a + $b / 2;
     echo "a=$a <br>";
     echo "b=$b <br>";
     echo "l=$l <br>";
 }
-calculateMLT(4, 8);
+calculateMiddleLineTrapezoid(4, 8);
