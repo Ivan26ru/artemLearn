@@ -1,24 +1,30 @@
 <?php
 
-function calculateDiscriminant($a, $b, $c,)
+
+function discriminant($a, $b, $c)
 {
     $D = $b * $b - 4 * $a * $c;
-    echo "$D = $b * $b - 4 * $a * $c\n";
-    echo "a=$a <br>";
-    echo "b=$b <br>";
-    echo "c=$c <br>";
-    echo "D=$D <br>";
-    echo "Корень из D=". sqrt(216) . "<br>";
+    echo "D = $D <br>";
+    return $D;
 }
-
-function calculateRoot($a, $b, $D)
+function calculateDiscriminant($a, $b, $c,)
 {
-    $x1 = (-$b + $D) / 2 * $a;
-    $x2 = (-$b - $D) / 2 * $a;
-    echo "Целое из корня D=$D <br>";
-    echo "x1=$x1 <br>";
-    echo "x2=$x2 <br>";
+    $D = discriminant($a, $b, $c);
+    if ($D < 0) {
+        echo "d меньше 0";
+        echo "Действительных корней нет";
+    } elseif ($D == 0){
+        echo "d равно 0";
+        echo "x1=3";
+    } else {
+        echo "d больше 0";
+        echo "x= 1";
+        echo "x= 2";
+    }
+echo "<br>";
+
 }
 
-calculateDiscriminant(-6, -12, 3);
-calculateRoot(-6, -12, 15);
+calculateDiscriminant(1,2 ,1 );
+calculateDiscriminant(4,1 ,1 );
+calculateDiscriminant(1,4 ,1 );
