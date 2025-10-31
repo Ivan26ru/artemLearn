@@ -1,11 +1,12 @@
 <?php
-
+$a = 3;
+echo '$a';
 function calculateWay($speed, $time)
 {
-    $Way = $speed * $time;
-    echo "Скорость=$speed км/ч<br>";
-    echo "Время=$time ч<br>";
-    echo "Путь=$Way км<br>";
+    $way = $speed * $time;
+    echo "Скорость= ". $speed . "км/ч<br>";
+    echo "Время= " . $time . "ч<br>";
+    echo "Путь= " . $way . "км<br>";
 }
 calculateWay(60, 12 );
 
@@ -13,9 +14,9 @@ calculateWay(60, 12 );
 function calculateSumGeometricProgression($b, $q)
 {
     $SGP = $b * 1 - $b * $q / 1-$q;
-    echo "b=$b<br>";
-    echo "q=$q <br>";
-    echo "SGM=$SGP <br>";
+    echo "b=" . $b . "<br>";
+    echo "q= " . $q . "<br>";
+    echo "SGM= " . $SGP . "<br>";
 }
 calculateSumGeometricProgression(40,50);
 
