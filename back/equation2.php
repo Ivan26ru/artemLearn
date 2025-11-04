@@ -11,15 +11,18 @@ function calculateDiscriminant($a, $b, $c,)
 {
     $D = discriminant($a, $b, $c);
     if ($D < 0) {
-        echo "d меньше 0";
-        echo "Действительных корней нет";
+        echo "d меньше 0 <br>";
+        echo "Действительных корней нет<br>";
     } elseif ($D == 0){
-        echo "d равно 0";
-        echo "x1=3";
+        echo "d равно 0 <br>";
+        $x1 = -$b / 2 * $a;
+        echo "x1=" . $x1 . "<br>";
     } else {
-        echo "d больше 0";
-        echo "x= 1";
-        echo "x= 2";
+        echo "d больше 0<br>";
+        $x1 = -$b + sqrt($D) / 2 * $a;
+        $x2 = -$b - sqrt($D) / 2 * $a;
+        echo "x1=". $x1 . "<br>";
+        echo "x2=" . $x2 . "<br>";
     }
 echo "<br>";
 
