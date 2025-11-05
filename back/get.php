@@ -1,4 +1,13 @@
+<form action="#" method="get">
+    <input name="a">
+    <input name="b">
+    <input name="c">
+    <button type="submit">Отправить</button>
+</form>
+
 <?php
+
+
 //https://student/back/get.php?a=аппельсин&b=55
 //array(2) { ["a"]=> string(18) "аппельсин" ["b"]=> string(2) "55" }
 
