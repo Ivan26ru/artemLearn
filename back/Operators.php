@@ -79,7 +79,7 @@ if (empty($_POST['action'])) {
 }
 
 // Кажется, что следующий код выведет "true"
-echo (true ? 'true' : false ? 't' : 'f');
+// echo (true ? 'true' : false ? 't' : 'f');
 
 // Однако код выводит "t" до PHP 8.0.0.
 // Причина состоит в том, что тернарные выражения левоассоциативны
@@ -90,9 +90,9 @@ echo ((true ? 'true' : false) ? 't' : 'f');
 // оценивается как логическое (bool) true, поэтому возвращает истинную ветвь
 // второго тернарного выражения
 
-echo 0 ?: 1 ?: 2 ?: 3, PHP_EOL; // 1
-echo 0 ?: 0 ?: 2 ?: 3, PHP_EOL; // 2
-echo 0 ?: 0 ?: 0 ?: 3, PHP_EOL; // 3
+echo 0 ?: 1 ?: 2 ?: 3, PHP_EOL . "<br>"; // 1
+echo 0 ?: 0 ?: 2 ?: 3, PHP_EOL . "<br>"; // 2
+echo 0 ?: 0 ?: 0 ?: 3, PHP_EOL . "<br>"; // 3
 
 // Пример работы с оператором нулевого слияния
 $action = $_POST['action'] ?? 'default';
@@ -110,4 +110,11 @@ $name = "";
 print 'Mr.' . $name ?? 'Anonymous';
 
 // Выведет "Mr. Anonymous"
-print 'Mr. '. ($name ?? 'Anonymous');
+print 'Mr. ' . ($name ?? 'Anonymous');
+
+
+$foo = null;
+$bar = null;
+$baz = 1;
+$qux = 2;
+echo $foo ?? $bar ?? $baz ?? $qux; // Выведет 1
