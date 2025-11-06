@@ -48,3 +48,23 @@ var_dump(0 == false); // TRUE  — то же, что и (bool) 0 == FALSE
 var_dump(100 < TRUE); // FALSE  — то же, что и (bool) 100 < TRUE
 var_dump(-10 < FALSE); // FALSE  — то же, что и (bool) -10 < FALSE
 var_dump(min(-100, -10, NULL, 10, 100)); // NULL  — (bool) NULL < (bool) -100 это FALSE < TRUE
+
+// Массивы сравниваются как в этом примере — со стандартными операторами сравнения, и оператором «космический корабль» (spaceship).
+function standard_array_compare($op1, $op2)
+{
+    if (count($op1) < count($op2)) {
+        return -1; // $op1 < $op2
+    } elseif (count($op1) > count($op2)) {
+        return 1; // $op1 > $op2
+    }
+    foreach ($op1 as $key => $value) {
+        if (!array_key_exists($key, $op2)) {
+            return 1;
+        } elseif ($value < $op2[$key]) {
+            return -1;
+        } elseif ($value > $op2[$key]) {
+            return 1;
+        }
+    }
+    return 0; // $op1 == $op2
+}
