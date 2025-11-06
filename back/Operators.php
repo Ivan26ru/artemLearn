@@ -93,3 +93,14 @@ echo ((true ? 'true' : false) ? 't' : 'f');
 echo 0 ?: 1 ?: 2 ?: 3, PHP_EOL; // 1
 echo 0 ?: 0 ?: 2 ?: 3, PHP_EOL; // 2
 echo 0 ?: 0 ?: 0 ?: 3, PHP_EOL; // 3
+
+// Пример работы с оператором нулевого слияния
+$action = $_POST['action'] ?? 'default';
+
+// Пример выше аналогичен этому выражению с if/else
+
+if (isset($_POST['action'])) {
+    $action = $_POST['action'];
+} else {
+    $action = 'default';
+}
