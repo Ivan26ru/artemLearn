@@ -68,3 +68,12 @@ function standard_array_compare($op1, $op2)
     }
     return 0; // $op1 == $op2
 }
+
+// Пример выражения с тернарным оператором
+$action = (empty($_POST['action'])) ? 'default' : $_POST['action'];
+// Код выше аналогичен блоку с конструкциями if/else
+if (empty($_POST['action'])) {
+    $action = 'default';
+} else {
+    $action = $_POST['action'];
+}
