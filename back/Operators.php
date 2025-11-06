@@ -104,3 +104,10 @@ if (isset($_POST['action'])) {
 } else {
     $action = 'default';
 }
+
+$name = "";
+// Вызывает предупреждение о том, что переменную $name не определили
+print 'Mr.' . $name ?? 'Anonymous';
+
+// Выведет "Mr. Anonymous"
+print 'Mr. '. ($name ?? 'Anonymous');
