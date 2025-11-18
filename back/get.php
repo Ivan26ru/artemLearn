@@ -33,7 +33,7 @@
 <hr>
 
 <?php
-function findFieldByKey($key): string
+function findFieldByKey(string $key): string
 {
 	if (isset($_GET[$key])) {
 		return $_GET[$key];
@@ -42,7 +42,7 @@ function findFieldByKey($key): string
 	}
 }
 
-function validateFieldByKey($key): bool
+function validateFieldByKey(string $key): bool
 {
 	return isset($_GET[$key]) && !empty($_GET[$key]);
 }
@@ -64,33 +64,32 @@ if (
 var_dump($_GET);
 
 
-function discriminant($a, $b, $c)
+function discriminant(float $a, float $b, float $c) : float
 {
 	$D = $b * $b - 4 * $a * $c;
 	echo "D = $D <br>";
 	return $D;
 }
 
-function calculateDiscriminant($a, $b, $c)
+function calculateDiscriminant(float $a,float $b,float $c) : void
 {
-	echo 'a=' . $a . "<br>";
-	echo 'b=' . $b . "<br>";
-	echo 'c=' . $c . "<br>";
-	$D = discriminant($a, $b, $c);
-	if ($D < 0) {
-		echo "D меньше 0 <br>";
-		echo "Действительных корней нет<br>";
-	} elseif ($D == 0) {
-		echo "D равно 0 <br>";
-		$x1 = -$b / 2 * $a;
-		echo "x1=" . $x1 . "<br>";
-	} else {
-		echo "D больше 0<br>";
-		$x1 = -$b + sqrt($D) / 2 * $a;
-		$x2 = -$b - sqrt($D) / 2 * $a;
-		echo "x1=" . $x1 . "<br>";
-		echo "x2=" . $x2 . "<br>";
-	}
-	echo "<br>";
-
+    echo 'a=' . $a . "<br>";
+    echo 'b=' . $b . "<br>";
+    echo 'c=' . $c . "<br>";
+    $D = discriminant($a, $b, $c);
+    if ($D < 0) {
+        echo "D меньше 0 <br>";
+        echo "Действительных корней нет<br>";
+    } elseif ($D == 0) {
+        echo "D равно 0 <br>";
+        $x1 = -$b / 2 * $a;
+        echo "x1=" . $x1 . "<br>";
+    } else {
+        echo "D больше 0<br>";
+        $x1 = -$b + sqrt($D) / 2 * $a;
+        $x2 = -$b - sqrt($D) / 2 * $a;
+        echo "x1=" . $x1 . "<br>";
+        echo "x2=" . $x2 . "<br>";
+    }
+    echo "<br>";
 }
