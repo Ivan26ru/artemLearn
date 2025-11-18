@@ -4,7 +4,7 @@ echo "Это циклы <br>";
 $i = 1;
 
 echo "<ol>";
-while ($i <= 0) {
+while ($i <= 10) {
 echo "<li> элемент №" . $i . "</li>" ;
     $i++;
 }
