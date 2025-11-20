@@ -42,7 +42,7 @@ class CalculatorDiscriminant
 
     private function calculateXLessZeroD(): string
     {
-        return "Корней нет";
+        return "Корней нет <br>";
     }
 
     private function calculateDEquallyZero(): string
@@ -61,8 +61,10 @@ class CalculatorDiscriminant
 
 }
 
-$discriminant = new CalculatorDiscriminant(1, 3, 1);
+$discriminant = new CalculatorDiscriminant(1, 10, 1);
 echo $discriminant->calculateFormula();
 
-$d2 = new CalculatorDiscriminant(11, 3, 1);
-echo $d2->calculateFormula();
+//$d2 = new CalculatorDiscriminant(11, 3, 1);
+//echo $d2->calculateFormula();
+
+echo "Дискриминат равен " . $discriminant->getDiscriminant() ;
