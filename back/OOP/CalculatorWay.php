@@ -29,7 +29,7 @@ class CalculatorWay
     }
 }
 
-$way = new CalculatorWay(60, 3 );
+$way = new CalculatorWay(60, 3);
 echo "Время=" . $way->getTime() . "ч<br>";
 echo "Скорость=" . $way->getSpeed() . "км/ч<br>";
 echo $way->calculateWay();

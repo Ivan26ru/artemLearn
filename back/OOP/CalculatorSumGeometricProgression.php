@@ -11,16 +11,17 @@ class CalculatorSumGeometricProgression
         $this->b = $b;
     }
 
-    public function getQ() : int
+    public function getQ(): int
     {
         return $this->q;
     }
-    public function getB() : int
+
+    public function getB(): int
     {
         return $this->b;
     }
 
-    public function calculateSumGeometricProgression() : string
+    public function calculateSumGeometricProgression(): string
     {
         $SGP = $this->b * 1 - $this->b * $this->q / 1 - $this->q;
         return "Сумма геометрической прогрессии= " . $SGP;
