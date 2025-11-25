@@ -1,6 +1,10 @@
 <?php
 
-class Log
+namespace LogsExample;
+
+require_once "LogInterface.php";
+
+class LogText implements LogInterface
 {
     static string $drive = "Текстовый файл";
     static string $VERSION = "1.0";
@@ -14,6 +18,6 @@ class Log
         echo "Логирование сообщение об ошибке". $message;
     }
 }
-echo Log::$VERSION;
-Log::info("Привет");
-Log::error("Ошибка");
+//echo Log::$VERSION;
+//Log::info("Привет");
+//Log::error("Ошибка");

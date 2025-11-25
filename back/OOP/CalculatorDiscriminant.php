@@ -1,19 +1,42 @@
 <?php
 
-class CalculatorDiscriminant
+namespace MyProject\Calculator;
+
+use LogsExample\LogConsole;
+use LogsExample\LogHtml;
+use LogsExample\LogInterface;
+use LogsExample\LogText;
+
+require_once "LogsExample/LogInterface.php";
+require_once "LogsExample/LogConsole.php";
+require_once "LogsExample/LogHtml.php";
+require_once "LogsExample/LogText.php";
+
+class CalculatorDiscriminant extends LogConsole
 {
     private int $a;
     private int $b;
     private int $c;
     private int $discriminant;
 
+    private LogInterface $logger;
 
     public function __construct(int $a, int $b, int $c)
     {
         $this->a = $a;
         $this->b = $b;
         $this->c = $c;
+
+        $this->logger = new LogText();
     }
+
+    public function loggerResult(): void
+    {
+        $this->logger::info(
+            $this->calculateFormula()
+        );
+    }
+
     static  function create(int $a, int $b, int $c): CalculatorDiscriminant
     {
         return new self($a, $b, $c);
@@ -64,13 +87,18 @@ class CalculatorDiscriminant
 
 }
 
+
+//CalculatorDiscriminant::info('Какой то наш текст, который логируем');
 $discriminant = new CalculatorDiscriminant(1, 10, 1);
-echo $discriminant->calculateFormula();
 
-//$d2 = new CalculatorDiscriminant(11, 3, 1);
-//echo $d2->calculateFormula();
+$discriminant->loggerResult();
 
-echo "Дискриминат равен " . $discriminant->getDiscriminant() ;
-
-$discriminant3 = CalculatorDiscriminant::create(2, 10, 1);
-echo $discriminant3->calculateFormula();
+//echo $discriminant->calculateFormula();
+//
+////$d2 = new CalculatorDiscriminant(11, 3, 1);
+////echo $d2->calculateFormula();
+//
+//echo "Дискриминат равен " . $discriminant->getDiscriminant() ;
+//
+//$discriminant3 = CalculatorDiscriminant::create(2, 10, 1);
+//echo $discriminant3->calculateFormula()
