@@ -14,7 +14,10 @@ class CalculatorDiscriminant
         $this->b = $b;
         $this->c = $c;
     }
-
+    static  function create(int $a, int $b, int $c): CalculatorDiscriminant
+    {
+        return new self($a, $b, $c);
+    }
 
     public function calculateFormula(): string
     {
@@ -68,3 +71,6 @@ echo $discriminant->calculateFormula();
 //echo $d2->calculateFormula();
 
 echo "Дискриминат равен " . $discriminant->getDiscriminant() ;
+
+$discriminant3 = CalculatorDiscriminant::create(2, 10, 1);
+echo $discriminant3->calculateFormula();
